@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrar header */
+header {
+    text-align: center;
+    background-color: #021f3c;
+    color: white;
+    padding: 20px;
+}
+
+/* Barra de navegación con Flexbox */
+nav {
+    background-color: #004a99;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3366cc;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: row; 
+    margin: 20px;
+}
+
+/* Aside a la izquierda */
+aside {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+/* Section a la derecha */
+section {
+    width: 70%;
+    padding: 15px;
+}
+
+/* Justificar el texto de Misión y Visión */
+section p {
+    text-align: justify;
+}
+
+/* Estilos para Misión y Visión */
+.mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mision, .vision {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de imágenes */
+.imagen-mision, .imagen-vision {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la Oferta Educativa */
+.oferta-educativa {
+    background-color: #96d3e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+.contenido-oferta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagen-oferta {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.texto-oferta {
+    max-width: 600px;
+    text-align: left;
+}
+
+.texto-oferta h3 {
+    color: #121516;
+}
+
+.texto-oferta p, .texto-oferta ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Botón de acceso a la oferta */
+.boton-oferta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e8ac6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-oferta:hover {
+    background-color: #5998dd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #3857d3;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
