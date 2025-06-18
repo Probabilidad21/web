@@ -1,77 +1,113 @@
-/* Estilos generales */
+/* -------------------------- */
+/* Estilos Generales para los 3 */
+/* -------------------------- */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    color: #121516;
+    background-color: #fff;
 }
 
-/* Centrar header */
-header {
+h1, h2, h3, h4, p {
+    margin: 10px 0;
+}
+
+/* Centrar textos en headers */
+header, .container {
     text-align: center;
+}
+
+/* Enlaces generales */
+a {
+    color: #004a99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------- */
+/* Estilos para INDEX y OFERTA */
+/* -------------------------- */
+
+/* Header INDEX y OFERTA */
+header {
     background-color: #021f3c;
     color: white;
     padding: 20px;
 }
 
-/* Barra de navegación con Flexbox */
-nav {
-    background-color: #004a99;
-    padding: 10px 0;
-}
-
-nav ul {
+/* Navegación */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 1.5rem;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     background-color: #3366cc;
 }
 
 /* Contenedor principal */
 main {
-    display: flex;
-    flex-direction: row; 
     margin: 20px;
 }
 
-/* Aside a la izquierda */
-aside {
-    width: 30%;
-    background-color: #f0f0f0;
-    padding: 15px;
-    margin-right: 20px;
+/* Oferta educativa */
+.oferta-educativa {
+    background-color: #96d3e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Section a la derecha */
-section {
-    width: 70%;
-    padding: 15px;
+.contenido-oferta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Justificar el texto de Misión y Visión */
-section p {
-    text-align: justify;
+.imagen-oferta {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
-/* Estilos para Misión y Visión */
+.texto-oferta {
+    max-width: 600px;
+    text-align: left;
+}
+
+.texto-oferta h3 {
+    color: #121516;
+}
+
+/* Estilos para INDEX (mision-vision, aside) */
 .mision-vision {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .mision, .vision {
@@ -85,7 +121,6 @@ section p {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de imágenes */
 .imagen-mision, .imagen-vision {
     width: 120px;
     height: auto;
@@ -93,66 +128,199 @@ section p {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos de la Oferta Educativa */
-.oferta-educativa {
-    background-color: #96d3e5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    text-align: center;
+aside {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-right: 20px;
+    float: right; /* para alinear aside a la derecha en escritorio */
+    box-sizing: border-box;
 }
 
-.contenido-oferta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.imagen-oferta {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.texto-oferta {
-    max-width: 600px;
-    text-align: left;
-}
-
-.texto-oferta h3 {
-    color: #121516;
-}
-
-.texto-oferta p, .texto-oferta ul {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Botón de acceso a la oferta */
-.boton-oferta {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4e8ac6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.boton-oferta:hover {
-    background-color: #5998dd;
+section {
+    width: 65%;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left; /* para texto principal a la izquierda */
 }
 
 /* Footer */
 footer {
+    clear: both;
     text-align: center;
     background-color: #3857d3;
     color: white;
     padding: 10px;
     margin-top: 20px;
 }
+
+/* -------------------------- */
+/* Estilos para PORTADA */
+/* -------------------------- */
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Imagenes {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Imagenes img {
+    width: 120px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* -------------------------- */
+/* RESPONSIVE - MEDIA QUERIES */
+/* -------------------------- */
+
+/* Para pantallas móviles pequeñas (celulares) */
+@media (max-width: 600px) {
+
+    /* NAV index y oferta */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Oferta educativa se vuelve columna */
+    .contenido-oferta {
+        flex-direction: column;
+    }
+
+    .imagen-oferta {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .texto-oferta {
+        max-width: 90vw;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Mision y visión se apilan vertical */
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision, .vision {
+        width: 90vw;
+        flex: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Aside y section en index se apilan vertical */
+    aside {
+        width: 90vw;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+
+    section {
+        width: 90vw;
+        float: none;
+        padding: 10px 0;
+    }
+
+    /* Container portada */
+    .container {
+        width: 95vw;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Logos portada en fila vertical */
+    .Imagenes {
+        flex-direction: column;
+    }
+
+    .Imagenes img {
+        width: 70vw;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    /* Texto portada centrado */
+    h3, h4, p {
+        font-size: 1rem;
+    }
+}
+
+/* Para tablets y pantallas medianas */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Oferta educativa en columna */
+    .contenido-oferta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-oferta {
+        width: 80vw;
+        height: auto;
+    }
+
+    .texto-oferta {
+        max-width: 80vw;
+        text-align: center;
+    }
+
+    /* Mision y visión en columna */
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision, .vision {
+        width: 80vw;
+        flex: none;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Aside y section en index apilados */
+    aside {
+        width: 80vw;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+
+    section {
+        width: 80vw;
+        float: none;
+        padding: 10px 0;
+    }
+
+    /* Container portada */
+    .container {
+        width: 85vw;
+        margin: 40px auto;
+    }
+
+    /* Logos portada centrados y en fila */
+    .Imagenes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .Imagenes img {
+        width: 120px;
+        height: auto;
+    }
+}
+
